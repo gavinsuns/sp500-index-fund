@@ -1,4 +1,3 @@
-from distutils.log import error
 import math #The Python math module
 import numpy as np #The Numpy numerical computing library
 import pandas as pd #The Pandas data science library
@@ -7,11 +6,10 @@ import xlsxwriter #The XlsxWriter libarary for
 from secrets import IEX_CLOUD_API_TOKEN
 from utils import chunks
 
-stocks = pd.read_csv('sp_500_stocks.csv')
-stocks = stocks[~stocks['Ticker'].isin(['DISCA', 'HFC','VIAC','WLTW'])]
+stocks = pd.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')[0]['Symbol'].values.tolist()
 my_columns = ['Ticker', 'Price','Market Capitalization', 'Number Of Shares to Buy']
 final_dataframe = pd.DataFrame(columns = my_columns)
-symbol_groups = list(chunks(stocks['Ticker'], 100))
+symbol_groups = list(chunks(stocks, 100))
 symbol_strings = []
 
 for i in range(0, len(symbol_groups)):
