@@ -28,7 +28,6 @@ for symbol_string in symbol_strings:
                                                    'N/A']], 
                                                   columns = my_columns)], 
                                         ignore_index = True)
-print(final_dataframe)
 
 while True:
     try:
@@ -37,3 +36,8 @@ while True:
         break
     except ValueError:
         print('That\'s not a number! \n Try again:')
+
+total_rows = len(final_dataframe)
+position_size = float(portfolio_size) / total_rows
+for i in range(0, total_rows):
+    final_dataframe['Number Of Shares to Buy'][i] = math.floor(position_size / final_dataframe['Price'][i])
