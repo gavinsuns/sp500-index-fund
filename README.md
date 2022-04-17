@@ -1,5 +1,5 @@
 # SP500 Index Fund
-Alternative version of the SP500 where each company has the same weight and user gets to decide the portfolio value.
+Creates an equal weight portfolio using the companies in the SP500. The total value of the portfolio is decided by the user.
 ## API For Stock Data
 IEX Cloud API Docs: https://iexcloud.io/docs/api/
 ## Running Script
