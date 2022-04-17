@@ -51,7 +51,7 @@ portfolio_dataframe.to_excel(writer, sheet_name='SP500', index = False, na_rep='
 for column in portfolio_dataframe:
     column_width = max(portfolio_dataframe[column].astype(str).map(len).max(), len(column))
     col_idx = portfolio_dataframe.columns.get_loc(column)
-    writer.sheets['my_analysis'].set_column(col_idx, col_idx, column_width)
+    writer.sheets['SP500'].set_column(col_idx, col_idx, column_width)
 
 # save the excel file
 writer.save()
