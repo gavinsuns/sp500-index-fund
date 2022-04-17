@@ -29,4 +29,4 @@ pip install -r requirements.txt
 python sp500.py
 ```
 14. Input the value of the portfolio.
-15. Open SP500.xlsx and take a look!
+15. Open sp500.xlsx and take a look!
