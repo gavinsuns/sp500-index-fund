@@ -11,21 +11,22 @@ IEX Cloud API Docs: https://iexcloud.io/docs/api/
 6. Click Next.
 7. Click Next.
 8. Click Finish.
-9. Create virtual environment:
+9. Go to the folder location in console.
+10. Create virtual environment:
 ```console
 python -m venv {current_path}/venv
 ```
-10. Activate virtual environment:
+11. Activate virtual environment:
 ```console
 venv\scripts\activate
 ```
-11. Install dependencies:
+12. Install dependencies:
 ```console
 pip install -r requirements.txt
 ```
-12. Run script:
+13. Run script:
 ```console
 python sp500.py
 ```
-13. Input the value of the portfolio into the console.
-14. Open SP500.xlsx and take a look!
+14. Input the value of the portfolio.
+15. Open SP500.xlsx and take a look!
