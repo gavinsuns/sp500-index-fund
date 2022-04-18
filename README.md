@@ -1,5 +1,5 @@
-# SP500 Index Fund
-Creates an equal weight portfolio using the companies in the SP500. The total value of the portfolio is decided by the user.
+# S&P 500 Index Fund
+Creates an equal weight portfolio using the companies in the S&P 500. The total value of the portfolio is decided by the user.
 ## API For Stock Data
 IEX Cloud API Docs: https://iexcloud.io/docs/api/
 ## Running Script
@@ -14,7 +14,7 @@ IEX Cloud API Docs: https://iexcloud.io/docs/api/
 9. Go to the folder location in console.
 10. Create virtual environment:
 ```console
-python -m venv {current_path}/venv
+python -m venv {path_for_this_repo}/venv
 ```
 11. Activate virtual environment:
 ```console
